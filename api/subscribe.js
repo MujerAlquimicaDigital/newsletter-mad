@@ -46,6 +46,9 @@ export default async function handler(req, res) {
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#f5f0e8; padding:24px 0;">
 <tr><td align="center">
 <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="background-color:#fdfaf5; max-width:600px; width:100%; border-radius:12px; overflow:hidden;">
+<tr><td>
+<img src="https://raw.githubusercontent.com/MujerAlquimicaDigital/mad-email-assets/main/cabezote-email-newsletter.png" alt="Mujer Alquímica Digital" width="600" style="display:block; width:100%; max-width:600px; height:auto;">
+</td></tr>
 <tr><td style="padding:40px 32px; font-family:'Raleway', Arial, sans-serif; color:#3a2c22; font-size:16px; line-height:1.65;">
 <p style="margin:0 0 8px 0; font-size:22px; font-family: Georgia, serif; color:#7a3c28;">Ya eres parte de la comunidad 🌙</p>
 <p style="margin:24px 0 18px 0;">Hola ${firstName},</p>
