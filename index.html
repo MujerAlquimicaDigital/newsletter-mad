@@ -34,22 +34,22 @@
   .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
 
   header.top {
-    padding: 28px 24px;
+    padding: 24px 24px 0;
     text-align: center;
+    background: var(--terracota);
   }
-  header.top .brand {
-    font-family: var(--font-serif);
-    font-size: 20px;
-    color: var(--terra-dark);
-    letter-spacing: 0.5px;
+  header.top img.logo {
+    height: 52px;
+    width: auto;
   }
 
   .hero {
+    background: var(--terracota);
     display: grid;
     grid-template-columns: 1.1fr 0.9fr;
     gap: 48px;
     align-items: center;
-    padding: 24px 24px 64px;
+    padding: 32px 24px 72px;
   }
   @media (max-width: 860px) {
     .hero { grid-template-columns: 1fr; padding-top: 8px; }
@@ -60,13 +60,13 @@
     font-family: var(--font-serif);
     font-size: clamp(32px, 4.2vw, 48px);
     line-height: 1.2;
-    color: var(--terra-dark);
+    color: var(--dorado);
     margin: 0 0 18px 0;
   }
   .hero .subhead {
     font-size: 18px;
-    color: var(--texto);
-    opacity: 0.85;
+    color: var(--blanco);
+    opacity: 0.95;
     margin: 0 0 32px 0;
     max-width: 460px;
   }
@@ -74,8 +74,9 @@
   .hero-photo img {
     width: 100%;
     height: auto;
-    border-radius: 16px;
-    box-shadow: 0 12px 40px rgba(122, 60, 40, 0.18);
+    display: block;
+    -webkit-mask-image: radial-gradient(ellipse 70% 70% at center, black 50%, transparent 96%);
+    mask-image: radial-gradient(ellipse 70% 70% at center, black 50%, transparent 96%);
   }
 
   form.signup {
@@ -158,7 +159,9 @@
   }
 
   section.beneficios {
-    background: var(--blanco);
+    background-image: linear-gradient(rgba(245,240,232,.88), rgba(245,240,232,.88)), url('textura.png');
+    background-size: cover;
+    background-position: center;
     padding: 64px 24px;
   }
   section.beneficios .wrap {
@@ -180,7 +183,7 @@
     .beneficios-grid { grid-template-columns: 1fr; }
   }
   .beneficio {
-    background: var(--crema-light);
+    background: var(--blanco);
     border-radius: 12px;
     padding: 26px;
     border-left: 3px solid var(--verde);
@@ -228,14 +231,14 @@
 <body>
 
 <header class="top">
-  <div class="brand">Mujer Alquímica Digital</div>
+  <img class="logo" src="icono-mad.png" alt="Mujer Alquímica Digital">
 </header>
 
 <section class="hero">
   <div class="wrap" style="display:contents;">
     <div class="hero-copy">
       <h1>Únete a las Mujeres Alquimistas Digitales</h1>
-      <p class="subhead">Un espacio semanal para mujeres construyendo su negocio digital con estructura y ciclos — no a la fuerza.</p>
+      <p class="subhead">Un espacio semanal para mujeres construyendo su negocio digital desde su energía, con estructura y respetando sus ciclos. No a la fuerza.</p>
 
       <form class="signup" id="signup-form">
         <div class="field">
