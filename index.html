@@ -56,6 +56,11 @@
   @media (max-width: 860px) {
     .hero { grid-template-columns: 1fr; padding-top: 8px; }
     .hero .hero-photo { order: -1; }
+    .hero-photo img {
+      transform: scale(1.18);
+      -webkit-mask-image: radial-gradient(ellipse 85% 85% at center, black 68%, transparent 100%);
+      mask-image: radial-gradient(ellipse 85% 85% at center, black 68%, transparent 100%);
+    }
   }
 
   .hero h1 {
