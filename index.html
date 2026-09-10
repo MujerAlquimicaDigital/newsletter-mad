@@ -18,6 +18,8 @@
     --crema: #e9ddc3;
     --crema-light: #f5f0e8;
     --blanco: #fdfaf5;
+    --azul: #263549;
+    --azul-dark: #1a2535;
     --texto: #3a2c22;
     --font-serif: 'Prata', Georgia, serif;
     --font-body: 'Raleway', sans-serif;
@@ -198,15 +200,20 @@
   .beneficio p { margin: 0; font-size: 15px; }
 
   section.cierre {
+    background: var(--verde-dark);
     padding: 72px 24px;
     text-align: center;
   }
   section.cierre p.linea {
     font-family: var(--font-serif);
     font-size: clamp(22px, 3vw, 30px);
-    color: var(--terra-dark);
+    color: var(--blanco);
     max-width: 560px;
     margin: 0 auto 32px auto;
+  }
+  section.cierre p.linea .highlight {
+    color: var(--dorado-claro);
+    font-weight: 700;
   }
   a.cta-link {
     display: inline-block;
@@ -297,7 +304,7 @@
 </section>
 
 <section class="cierre">
-  <p class="linea">Esto no es una lista de correos más.<br>Es una comunidad que te sostiene y te acompaña en tu crecimiento y expansión.</p>
+  <p class="linea">Esto no es una lista de correos más.<br>Es una <span class="highlight">comunidad que te sostiene</span> y te acompaña en tu crecimiento y expansión.</p>
   <a href="#signup-form" class="cta-link" id="cierre-cta">Quiero unirme</a>
 </section>
 
